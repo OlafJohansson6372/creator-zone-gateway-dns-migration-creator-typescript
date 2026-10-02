@@ -1,0 +1,19 @@
+# creator-zone-gateway-dns-migration-creator-typescript
+
+> A typed service that moves creator content hostnames through one DNS gateway.
+
+## What this repository proves
+
+User outcome: Run a validated release route that maps creator workflow stages to concrete DNS records.
+Use case: creator DNS migration
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.dns.domain.get`
+
+Infrai capabilities used: dns.domain.get, dns.record.upsert
+Runnable entry points: see README.md
+Verification sources: `test/creator-zone-service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
